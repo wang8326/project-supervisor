@@ -1,0 +1,4 @@
+interface:
+  display_name: "项目监管器"
+  short_description: "只读监管项目、隔离独立执行任务、共享锁定并严格验收交付"
+  default_prompt: "Use $project-supervisor as this task's permanent read-only supervisor. Inspect the project, keep this task out of implementation, and create a separate executor task for every repository write."
