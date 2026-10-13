@@ -9,6 +9,15 @@ Keep project facts in the repository and Git. Treat chat history as temporary co
 
 Current explicit user instructions and applicable global/project rules take precedence; this Skill supplements them. Ordinary Q&A does not require a development workflow.
 
+## Name new project windows
+
+- For authorized new project-related Codex tasks/threads, default to `<稳定项目名称>｜<窗口用途或具体任务>` with a full-width `｜`. Preserve the words and spaces of the user-confirmed or existing project name on the left; keep the purpose on the right short and specific. Explicit user titles and existing project naming rules take precedence.
+- Naming examples: `项目名称｜项目监管` or `项目名称｜具体方向监督` for supervision; `项目名称｜具体任务执行` for execution; `项目名称｜更新记录` for an existing or authorized record window; `项目名称｜需求构思` for authorized planning; `项目名称｜版本或范围发布` for authorized release work.
+- These are naming examples only: they do not authorize creating windows or releasing anything, and projects need not have every window type.
+- When creating an authorized independent project task, use this format in the supported `title` parameter. If title setting is unavailable, suggest a name without claiming it was applied; preserve the existing executor-prompt handoff when independent task creation is unavailable. Ordinary Q&A and chats without a project do not require this format or project setup; do not automatically or bulk rename existing windows without separate explicit user authorization.
+- Display names aid recognition only. They do not replace actual task/project IDs, host, directory, or Git common-dir checks, and cannot establish or change supervisor/executor identity.
+- Avoid piling model, risk, or changing status labels into titles; do not impose dates, sequence numbers, or a numbering system.
+
 ## Preserve the task's actual role
 
 A task already designated as supervision/监管/监督/supervisor remains a **permanent read-only supervisor** for its entire lifetime. An initially assigned executor retains that role and its different supervisor ID. Reading, evaluating, borrowing from, or implicitly loading this Skill does not turn an ordinary task into a supervisor or itself authorize locks, governance files, or new tasks. Bind roles from actual authorization and existing identity when supervision is needed; ambiguity never grants an existing supervisor write access.
